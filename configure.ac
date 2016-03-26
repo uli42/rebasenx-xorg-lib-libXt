@@ -95,6 +95,10 @@ case $host_os in
 esac
 AC_SUBST(STRINGSABIOPTIONS)
 
+# compile the NX version of the lib
+AC_DEFINE(NX_TRANS_SOCKET, 1, [?])
+AC_DEFINE(NX_TRANS_TEST, 1, [?])
+
 # Man page processing requirements
 XORG_PROG_RAWCPP
 XORG_MANPAGE_SECTIONS
